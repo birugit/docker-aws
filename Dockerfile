@@ -5,6 +5,6 @@ FROM jenkins/jenkins:lts
 RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding
  
 # Setting up environment variables for Jenkins admin user
-ENV JENKINS_USER admin
+ENV JENKINS_USER jenkins
 ENV JENKINS_PASS biru2008
 VOLUME /var/jenkins_home
